@@ -1,0 +1,20 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto=create-drop: none
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+  datasource:
+    url: jdbc:mysql://localhost:3306/spare_parts_db
+    username: spare_parts_db
+    password: spare_parts_db_pwd
+
+jwt:
+  secret: some_secret
+  expirationDateInMs: 3600000
+  refreshExpirationDateInMs: 300000
+
+encryption:
+  secret: some_secret
+  salt: some_salt
